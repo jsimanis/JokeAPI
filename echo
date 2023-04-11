@@ -1,0 +1,65 @@
+getting as txt or json??
+
+1st try
+const url = 'https://icanhazdadjoke.com/'
+        //function getNew(){
+        let getNew = async () => {
+            const response = await fetch(url, {
+                //Accept: 'application/json'
+                headers:{
+                    'Accept': 'text/plain'
+                }
+            })
+            let myj = response.text()
+            let joke = (await myj).toString()
+                // .then((response) => response.json())
+                // .then((data) => console.log(data));
+            let p = document.getElementById('joke')
+            p.innerText = joke 
+        }
+
+getting as text 
+const url = 'https://icanhazdadjoke.com/'
+        let getNew = async () => {
+            const response = await fetch(url, {
+                headers:{
+                    'Accept': 'text/plain'
+                }
+            })
+            let promise = response.text()
+            let joke = (await promise).toString()
+            let p = document.getElementById('joke')
+            p.innerText = joke 
+        }getting as txt or json??
+
+1st try
+const url = 'https://icanhazdadjoke.com/'
+        //function getNew(){
+        let getNew = async () => {
+            const response = await fetch(url, {
+                //Accept: 'application/json'
+                headers:{
+                    'Accept': 'text/plain'
+                }
+            })
+            let myj = response.text()
+            let joke = (await myj).toString()
+                // .then((response) => response.json())
+                // .then((data) => console.log(data));
+            let p = document.getElementById('joke')
+            p.innerText = joke 
+        }
+
+getting as text 
+const url = 'https://icanhazdadjoke.com/'
+        let getNew = async () => {
+            const response = await fetch(url, {
+                headers:{
+                    'Accept': 'text/plain'
+                }
+            })
+            let promise = response.text()
+            let joke = (await promise).toString()
+            let p = document.getElementById('joke')
+            p.innerText = joke 
+        }
